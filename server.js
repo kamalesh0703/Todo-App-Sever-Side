@@ -1,10 +1,10 @@
-var express=require('express')
-var mongoose=require('mongoose')
-var cors=require('cors')
-let bodyParser=require('body-parser')
+var express=require('express');
+var mongoose=require('mongoose');
+var cors=require('cors');
+let bodyParser=require('body-parser');
 let dbConfig=require('./Database/database');
 
-const todoRoute=require('./router/Studentrouter')
+const todoRoute=require('./router/Studentrouter');
 
 var app=express()
 
