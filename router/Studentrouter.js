@@ -33,7 +33,6 @@ router.delete('/delete/:id', async (req, res, next) => {
 router.put('/update/:id',async(req,res)=>{
    try {
         const { id } = req.params;
-        console.log(id);
         const employee=await apiSchema.findByIdAndUpdate({_id: id},{
             name:req.body.name,
             title:req.body.title,
